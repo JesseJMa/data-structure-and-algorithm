@@ -9,3 +9,7 @@ def qsort(arr):
     medium = [i for i in arr if i == pivot_element]
     big = [i for i in arr if i > pivot_element]
     return qsort(small) + medium + qsort(big)
+
+if __name__ == '__main__':
+    arr = [3,5,6,1,8,7,7,2,0,1]
+    print(qsort(arr))
