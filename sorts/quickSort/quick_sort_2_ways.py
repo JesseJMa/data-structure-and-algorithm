@@ -2,6 +2,8 @@
 # https://blog.csdn.net/BTUJACK/article/details/81261647
 import random
 
+
+
 def insertion_sort(arr, l, r):
     for i in range(l + 1, r + 1):
         temp = arr[i]
