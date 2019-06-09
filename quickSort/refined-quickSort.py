@@ -11,10 +11,6 @@ def insertion_sort(arr, l, r):
             index -= 1
         arr[index] = temp
     
-            
-            
-    
-
 def partition_refined(arr, l, r):
   
     ind = random.randint(l, r)
@@ -36,8 +32,6 @@ def partition_refined(arr, l, r):
             i += 1
             j -= 1
     arr[j], arr[l] = arr[l], arr[j]  # 上面设置了arr[l] 是 基准点，现在挪到中间
-    print('ppppp', j)
-
     return j
 
 def quick_sort_refined(arr, l, r):
@@ -45,7 +39,7 @@ def quick_sort_refined(arr, l, r):
         insertion_sort(arr, l, r)
         return
     p = partition_refined(arr, l, r)
-    print('aaaaaa', p)
+    print('p = ', p)
     quick_sort_refined(arr, l, p - 1)
     quick_sort_refined(arr, p + 1, r)
     return arr
