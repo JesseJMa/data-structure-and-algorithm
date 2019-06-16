@@ -11,5 +11,6 @@ def qsort(arr):
     return qsort(small) + medium + qsort(big)
 
 if __name__ == '__main__':
+    
     arr = [3,5,6,1,8,7,7,2,0,1]
     print(qsort(arr))
