@@ -4,23 +4,27 @@
 # [7] Reverse Integer
 #
 class Solution:
-    def reverse(self, x: int) -> int:
-        arr = list(str(x))
-        i = 0 if arr[0] != '-' else 1
-        j = len(arr) - 1
+   def reverse(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        sign = x < 0 and -1 or 1
+        print(sign)
+        x = abs(x)
+        ans = 0
+        while x:
+            print(ans)
+            ans = ans * 10 + x % 10
+            x //= 10
+        return sign * ans if ans <= 0x7fffffff else 0
+                
+            
         
-        while i < j:
-            tmp = arr[i]
-            arr[i] = arr[j]
-            arr[j] = tmp
-            i += 1
         
-        result = arr if arr[0] != '0' else arr[1:]
-        if result:
-            return int(''.join(result))
-        else:
-            return None
+
+
+    
         
-        pass
         
 
