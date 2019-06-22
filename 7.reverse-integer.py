@@ -16,7 +16,7 @@ class Solution:
         while x:
             print(ans)
             ans = ans * 10 + x % 10
-            x //= 10
+            x = x // 10
         return sign * ans if ans <= 0x7fffffff else 0
                 
             
