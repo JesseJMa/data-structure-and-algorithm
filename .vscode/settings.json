@@ -1,9 +1,9 @@
 {
-    "python.testing.pyTestArgs": [
+    "python.testing.pytestArgs": [
         "."
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
-    "python.testing.pyTestEnabled": true,
-    "python.pythonPath": "/opt/anaconda3/bin/python"
+    "python.testing.pytestEnabled": true,
+    "python.pythonPath": "D:\\Anaconda\\python.exe"
 }
